@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BUST BOY - Electronics, Appliances, Gaming &amp; More</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0046be",
+                        "secondary": "#ffc600",
+                        "background-light": "#f0f2f4",
+                        "background-dark": "#101922",
+                        "text-light": "#333333",
+                        "text-dark": "#f0f2f4",
+                        "text-muted-light": "#666666",
+                        "text-muted-dark": "#99a9b5",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1a2836",
+                        "border-light": "#e0e2e4",
+                        "border-dark": "#304050",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top Bar -->
+<div class="bg-gray-100 dark:bg-background-dark border-b border-border-light dark:border-border-dark text-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-10 items-center justify-end gap-6 text-xs">
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-secondary" href="#">Store Locator</a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-secondary" href="#">Order Status</a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary dark:hover:text-secondary" href="#">Help</a>
+</div>
+</div>
+</div>
+<!-- Main Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-card-light dark:bg-card-dark shadow-md">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-20 items-center justify-between gap-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-primary text-3xl">data_usage</span>
+<h1 class="text-2xl font-extrabold tracking-tighter">BUST BOY</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="text-base font-semibold hover:text-primary" href="#">Electronics</a>
+<a class="text-base font-semibold hover:text-primary" href="#">Appliances</a>
+<a class="text-base font-semibold hover:text-primary" href="#">Gaming</a>
+<a class="text-base font-semibold text-primary dark:text-secondary" href="#">Deals</a>
+</nav>
+</div>
+<div class="flex flex-1 items-center justify-end gap-4">
+<div class="w-full max-w-lg">
+<label class="relative text-text-muted-light dark:text-text-muted-dark focus-within:text-text-light dark:focus-within:text-text-dark">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">search</span>
+<input class="form-input w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark pl-10 pr-4 py-2.5 text-sm placeholder:text-text-muted-light dark:placeholder:text-text-muted-dark focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Search for products..." type="search"/>
+</label>
+</div>
+<div class="flex items-center gap-2">
+<button class="relative flex h-11 w-11 cursor-pointer items-center justify-center overflow-hidden rounded-lg hover:bg-background-light dark:hover:bg-background-dark">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span class="absolute top-1 right-1 flex h-5 w-5 items-center justify-center rounded-full bg-secondary text-xs font-bold text-black">2</span>
+</button>
+<button class="flex h-11 w-11 cursor-pointer items-center justify-center overflow-hidden rounded-lg hover:bg-background-light dark:hover:bg-background-dark">
+<span class="material-symbols-outlined text-2xl">person</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full bg-primary/10 dark:bg-primary/20 py-12 md:py-20">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex overflow-x-auto snap-x snap-mandatory [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex min-w-full snap-center items-center justify-between gap-8">
+<div class="flex-1 max-w-xl">
+<h2 class="text-4xl md:text-5xl font-extrabold text-text-light dark:text-text-dark tracking-tight">Top Deals of the Week</h2>
+<p class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark">Unbeatable prices on TVs, laptops, and more. Don't miss out!</p>
+<button class="mt-8 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-lg hover:bg-primary/90">
+<span>Shop Now</span>
+</button>
+</div>
+<div class="hidden md:block flex-1">
+<img class="rounded-xl object-cover w-full h-80" data-alt="A modern desk setup with a laptop, headphones, and a notebook." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4QKVS_HX37kaDCVVAo0nsv5IBVVbrgA1NTTzPBOwYwzfRvNPDF0WQysqvIzushqdEtbz5jhT4RxYNkWOHGnxxuAYjg6YD251nWEFzWN2sm3zPp8tvU2wA-eYEhZiF6oamT4KlhbwVlUKeQ1Xxa1WUhH9E7e-f2fyiQ57ujLJin_NIxj-o-OkBsRcd7Pp2u_ZVwxd1pktdknsbJjVjmTPbH69U1AOESLKRPZBCb20hCHnS6xMF5CPARhgUxwTu6RbMCdUm0XOZ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products Section -->
+<section class="py-16 sm:py-24">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark px-4 pb-8">Featured Products</h2>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<!-- Product Card -->
+<div class="flex flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-sm transition-shadow hover:shadow-lg">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A sleek black gaming laptop with a colorful backlit keyboard." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6_lO8DZawBc8iKltHgtXr6AX0vDDRD3bqXinoW87xM2RXtgeI168i9O8p2D122plnwbYJJPK2VRat8SkRut5p7mV6ePGPMs1ja4XLv_RDpIhC6jzMoMy6quR40b8p6emYDP39NaB-g_4Gg1fgWWZcEo54RtqKgWZL1CZz9ytypuxbiIuui941h0HrUrKs4tB9R6nxL4_R1kv46SYqE66Vxlqj8FFV3QTkzZuIdMGWMuPLSC4oZCD19MZ-z2mlgrSq2u1WvFrL");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-base font-semibold leading-normal flex-grow">Gaming Laptop Model X</p>
+<div class="flex items-center mt-1">
+<span class="text-yellow-400">★★★★☆</span>
+<span class="text-xs text-text-muted-light dark:text-text-muted-dark ml-2">(123)</span>
+</div>
+<p class="text-lg font-bold text-text-light dark:text-text-dark mt-2">$1,299.99</p>
+</div>
+<button class="mt-2 flex w-full cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary dark:text-white text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30">
+<span class="material-symbols-outlined mr-2 text-base">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+</div>
+<!-- Product Card -->
+<div class="flex flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-sm transition-shadow hover:shadow-lg">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A large 4K Ultra HD Smart TV mounted on a wall." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMGdvndaLJfd6vkkfA_AahXLY0_3F2vSfCCKfQ5K8qG65CH47QLnNfMDEFaP-RL5g0N1belunzeh7v8Cl1SFlThISQ_jnmCiCdE7lVsOMzXJ2nSpb4ZZjHEhV3y8_m8TVgRCLohlgY-Z-0NjkPlVLaOCMw-tqMtysofaEyHWUrdKHk_8O1bkhSbm2H8YEW-jrAuAiVHczhNQUN5GQiD--cEMw1OamK4J7qucCOFZNYTK2OyamKXj7JM08WBQ7s79in052hrZ3i");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-base font-semibold leading-normal flex-grow">4K Ultra HD Smart TV</p>
+<div class="flex items-center mt-1">
+<span class="text-yellow-400">★★★★★</span>
+<span class="text-xs text-text-muted-light dark:text-text-muted-dark ml-2">(450)</span>
+</div>
+<p class="text-lg font-bold text-text-light dark:text-text-dark mt-2">$799.99</p>
+</div>
+<button class="mt-2 flex w-full cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary dark:text-white text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30">
+<span class="material-symbols-outlined mr-2 text-base">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+</div>
+<!-- Product Card -->
+<div class="flex flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-sm transition-shadow hover:shadow-lg">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A modern stainless steel refrigerator in a clean kitchen." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfRT0VyLsFD2T-zgm7Pwl0k2xLpz3KOAd8krY7Fw4mRYRe0P8Ze9PKUnynopttvmIi9BBWhTwbLJ4ZhFO_Olr5fPzi3DWW2OPFf9p9WynE4hKJ7EelpItEz1h1Yp30TGzxMnWIc3tGGCtJLFIXWmEhPzpvvz3X6bjqlfQcN8j2UWO3ruW-f-X4UX5mGrFDvgJrAcM1lfdW4rv91tUX3v4g3LSmysgZxoJOzLSa2xlvdLfM0Nj8__WJ2FKL0pPcj--s_js5vF-l");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-base font-semibold leading-normal flex-grow">Stainless Steel Refrigerator</p>
+<div class="flex items-center mt-1">
+<span class="text-yellow-400">★★★★☆</span>
+<span class="text-xs text-text-muted-light dark:text-text-muted-dark ml-2">(88)</span>
+</div>
+<p class="text-lg font-bold text-text-light dark:text-text-dark mt-2">$1,499.00</p>
+</div>
+<button class="mt-2 flex w-full cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary dark:text-white text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30">
+<span class="material-symbols-outlined mr-2 text-base">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+</div>
+<!-- Product Card -->
+<div class="flex flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark p-4 shadow-sm transition-shadow hover:shadow-lg">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A pair of stylish wireless noise-cancelling headphones." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC0POFflGRGcYnUdZlGub3uFAtPZ5MFxY7I31bbIkDxFvFSDq0SU41Jw6IRmCiZVL3ser2oMa8gZq88VXeODWvhpUYhpJbs5u_dguABCQp2p6FZ8yhBnvY52FkJ9RpnCInSq0JIwGDcDBtIXaWd2Yqae634Bf3CCjoeWDvn7x2Y_STtsQJKdCqnzApyhaOmc6Wl_Oo-d0tBLOtCYz1w-KWd7fwB442WsGt2jje2j3mzc_LYz5a_QjrJMwCkU-v0Ky1FKgNs8NHB");'></div>
+<div class="flex flex-col flex-grow">
+<p class="text-base font-semibold leading-normal flex-grow">Wireless Noise-Cancelling Headphones</p>
+<div class="flex items-center mt-1">
+<span class="text-yellow-400">★★★★★</span>
+<span class="text-xs text-text-muted-light dark:text-text-muted-dark ml-2">(512)</span>
+</div>
+<p class="text-lg font-bold text-text-light dark:text-text-dark mt-2">$349.99</p>
+</div>
+<button class="mt-2 flex w-full cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary dark:text-white text-sm font-bold hover:bg-primary/20 dark:hover:bg-primary/30">
+<span class="material-symbols-outlined mr-2 text-base">add_shopping_cart</span>
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Best Sellers Carousel -->
+<section class="py-16 sm:py-24 bg-card-light dark:bg-card-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark px-4 pb-8">Best Sellers</h2>
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden -mx-4">
+<div class="flex items-stretch p-4 gap-6">
+<!-- Carousel Card -->
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark min-w-80">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="The latest iPhone model displayed on a colorful background." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwcmjk3VdAkce3BWoKf9DXPZY5KAvIRT5VzyU5EShskgo6t4lUWvDaoZxUfS2k8BWpjFEJDq67IH2yoss5cY-UP0oS90Cx9hD_Rz4cXtkfPeSXQIttuEcNufkyJhUIkm1-MKI369DHb1f1XvB40AolPXnlkuQwKsUc7SPVy9aok04ob6oSOULM2VrHqpaI35o199lUjv-Zy7AL1097wF9WKHIq8zhCx1frO_WlBrDZwW0oQ2hshUciBsATnGVMwHhsqA2bju-Z");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-lg font-semibold">The New iPhone Has Arrived</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">Experience the future. Order yours today.</p>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-primary/90">
+<span class="truncate">Shop Now</span>
+</button>
+</div>
+</div>
+<!-- Carousel Card -->
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark min-w-80">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="A collection of smart home devices including a smart speaker, thermostat, and light bulbs." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC0cW2qBOxz_UmCFq_ULreegYxSdGjwDW8TO9uuN7kyi-8a6fcCNZEhKoCXP3WoxZUayJUTTW6J5rvviFpTAfe_InMD8ZNzVX5m2MEusb88vsqxksz_AgKH55Hhe-xbJRitrKQbKxg__Ig-_2zXe0Mxo22PhtLKcDgnfX0T0eb4yNMBWXhXVzQWTQXrFhR3a3c7oUIcd5xcqLGkmr_7Wn7Ch6d5u0QmWXF7zXdofXGqb3EBUnNHCBEgDqTlhNRVtpv0GWWA_48w");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-lg font-semibold">Smart Home Savings Event</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">Upgrade your home with the latest smart devices.</p>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-primary/90">
+<span class="truncate">Shop Now</span>
+</button>
+</div>
+</div>
+<!-- Carousel Card -->
+<div class="flex h-full flex-1 flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark min-w-80">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="A new gaming console with its controller displayed in a dark, atmospheric setting." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABcEefDtN8XquCZvN-NSwsdcIUOIHHFy486MmbdR1E9kIKVAbglqpozOORF2XLP0XG8anGyW_lngddqfZtb9au03Hp7dpmckDwCe5toHP7zUS1K7Wx9P2UDcPDpFUhQjgFpzQrcW-MPZBxOUfVkQjSq4JSrNzktrDbZLY0BIUJuLKKS2upjksKJfBXxB6PBjcphFUSoEtVppGhgWD6Qj01CcnmwzJtPag8WxKvQklkfYv4TyHYNGl1pvXpIGtaP4bfznJBeAc5");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-lg font-semibold">Next-Gen Gaming Consoles</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">Unleash the power of next-gen gaming.</p>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-primary/90">
+<span class="truncate">Shop Now</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-card-dark text-text-muted-dark">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+<div class="col-span-2 md:col-span-4 lg:col-span-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-3xl">data_usage</span>
+<h2 class="text-2xl font-extrabold tracking-tighter text-white">BUST BOY</h2>
+</div>
+<p class="mt-4 text-sm">Your one-stop shop for the latest and greatest in electronics and appliances.</p>
+</div>
+<div>
+<h3 class="font-bold text-white">Customer Service</h3>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="hover:text-white" href="#">Help Center</a></li>
+<li><a class="hover:text-white" href="#">Returns</a></li>
+<li><a class="hover:text-white" href="#">Contact Us</a></li>
+<li><a class="hover:text-white" href="#">Track Order</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-white">About BUST BOY</h3>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="hover:text-white" href="#">About Us</a></li>
+<li><a class="hover:text-white" href="#">Careers</a></li>
+<li><a class="hover:text-white" href="#">Press</a></li>
+<li><a class="hover:text-white" href="#">Affiliates</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-white">My Account</h3>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="hover:text-white" href="#">Sign In</a></li>
+<li><a class="hover:text-white" href="#">My Orders</a></li>
+<li><a class="hover:text-white" href="#">Wishlist</a></li>
+<li><a class="hover:text-white" href="#">My Profile</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-4 lg:col-span-1">
+<h3 class="font-bold text-white">Subscribe to our newsletter</h3>
+<p class="mt-2 text-sm">Get the latest deals and new product announcements.</p>
+<form class="mt-4 flex gap-2">
+<input class="form-input flex-1 rounded-md border-border-dark bg-background-dark text-white text-sm placeholder:text-text-muted-dark focus:border-secondary focus:ring-secondary" placeholder="Enter your email" type="email"/>
+<button class="rounded-md bg-secondary px-4 py-2 text-sm font-bold text-black hover:bg-yellow-400" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="mt-16 border-t border-border-dark pt-8 flex flex-col md:flex-row items-center justify-between text-sm">
+<p class="text-text-muted-dark">© 2024 BUST BOY. All Rights Reserved.</p>
+<div class="flex items-center gap-4 mt-4 md:mt-0">
+<a class="hover:text-white" href="#">Facebook</a>
+<a class="hover:text-white" href="#">Twitter</a>
+<a class="hover:text-white" href="#">Instagram</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
