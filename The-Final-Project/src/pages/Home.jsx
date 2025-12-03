@@ -98,7 +98,10 @@ export default function Home() {
       <h1>Products</h1>
       <FiltersBar products={products} state={filters} setState={setFilters} />
       {loading ? <div className="muted">Loading products...</div> : null}
-      <div className="grid">
+      {!loading && filtered.length === 0 ? (
+        <div className="muted">No products found with these filters.</div>
+      ) : null}
+      <div className="product-grid">
         {filtered.map((p) => (
           <ProductCard key={p.id} product={p} dynamicRating={p.dynamicRating} />
         ))}

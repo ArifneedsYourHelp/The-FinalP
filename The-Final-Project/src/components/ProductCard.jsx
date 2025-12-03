@@ -34,7 +34,7 @@ export default function ProductCard({ product, dynamicRating }) {
             <span className="price">{money(product.price)}</span>
           )}
         </div>
-        <button className="btn" onClick={() => addItem(product, 1)}>
+        <button className="btn add-to-cart-btn" onClick={() => addItem(product, 1)}>
           Add to Cart
         </button>
       </div>

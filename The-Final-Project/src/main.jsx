@@ -8,6 +8,8 @@ import ProductDetail from "./pages/ProductDetail.jsx";
 import Cart from "./pages/Cart.jsx";
 import Checkout from "./pages/Checkout.jsx";
 import OrderConfirmation from "./pages/OrderConfirmation.jsx";
+import Contact from "./pages/Contact.jsx";
+import Electronics from "./pages/Electronics.jsx";
 import { CartProvider } from "./context/CartContext.jsx";
 
 createRoot(document.getElementById("root")).render(
@@ -21,6 +23,8 @@ createRoot(document.getElementById("root")).render(
             <Route path="cart" element={<Cart />} />
             <Route path="checkout" element={<Checkout />} />
             <Route path="order-confirmation" element={<OrderConfirmation />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="electronics" element={<Electronics />} />
           </Route>
         </Routes>
       </BrowserRouter>
