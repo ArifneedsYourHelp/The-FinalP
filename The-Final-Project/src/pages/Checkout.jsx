@@ -7,7 +7,9 @@ function computeTaxes(subtotal, province) {
   const GST = 0.05;
   const QST = 0.09975;
   const gst = subtotal * GST;
-  const qst = province?.toLowerCase() === "quebec" ? subtotal * QST : 0;
+  // Default to Quebec taxes if no province is specified (initial state) or if it matches Quebec
+  const isQuebec = !province || province.trim() === "" || province.toLowerCase() === "quebec";
+  const qst = isQuebec ? subtotal * QST : 0;
   const total = subtotal + gst + qst;
   return { gst, qst, total };
 }
